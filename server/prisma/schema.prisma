@@ -18,7 +18,7 @@ model User {
   username  String   @unique
 }
 
-model Logg {
+model Log {
   application String?
   category    String?
   createdAt   DateTime @default(now())

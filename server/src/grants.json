@@ -31,31 +31,31 @@
   },
   {
     "role": "user",
-    "resource": "Logg",
+    "resource": "Log",
     "action": "read:own",
     "attributes": "*"
   },
   {
     "role": "user",
-    "resource": "Logg",
+    "resource": "Log",
     "action": "create:any",
     "attributes": "*"
   },
   {
     "role": "user",
-    "resource": "Logg",
+    "resource": "Log",
     "action": "update:any",
     "attributes": "*"
   },
   {
     "role": "user",
-    "resource": "Logg",
+    "resource": "Log",
     "action": "delete:any",
     "attributes": "*"
   },
   {
     "role": "user",
-    "resource": "Logg",
+    "resource": "Log",
     "action": "read:any",
     "attributes": "*"
   }

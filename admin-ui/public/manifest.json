@@ -1,6 +1,6 @@
 {
-  "short_name": "Sample service",
-  "name": "Sample service",
+  "short_name": "Remote-Logger",
+  "name": "Remote-Logger",
   "icons": [
     {
       "src": "favicon.ico",

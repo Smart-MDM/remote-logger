@@ -9,10 +9,10 @@ import { UserList } from "./user/UserList";
 import { UserCreate } from "./user/UserCreate";
 import { UserEdit } from "./user/UserEdit";
 import { UserShow } from "./user/UserShow";
-import { LoggList } from "./logg/LoggList";
-import { LoggCreate } from "./logg/LoggCreate";
-import { LoggEdit } from "./logg/LoggEdit";
-import { LoggShow } from "./logg/LoggShow";
+import { LogList } from "./log/LogList";
+import { LogCreate } from "./log/LogCreate";
+import { LogEdit } from "./log/LogEdit";
+import { LogShow } from "./log/LogShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -32,7 +32,7 @@ const App = (): React.ReactElement => {
   return (
     <div className="App">
       <Admin
-        title={"Sample service"}
+        title={"Remote-Logger"}
         dataProvider={dataProvider}
         authProvider={jwtAuthProvider}
         theme={theme}
@@ -47,11 +47,11 @@ const App = (): React.ReactElement => {
           show={UserShow}
         />
         <Resource
-          name="Logg"
-          list={LoggList}
-          edit={LoggEdit}
-          create={LoggCreate}
-          show={LoggShow}
+          name="Log"
+          list={LogList}
+          edit={LogEdit}
+          create={LogCreate}
+          show={LogShow}
         />
       </Admin>
     </div>

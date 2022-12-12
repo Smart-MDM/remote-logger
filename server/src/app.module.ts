@@ -11,6 +11,7 @@ import { ConfigModule, ConfigService } from "@nestjs/config";
 import { ServeStaticModule } from "@nestjs/serve-static";
 import { ServeStaticOptionsService } from "./serveStaticOptions.service";
 import { GraphQLModule } from "@nestjs/graphql";
+import { WsNotifyGateway } from "./notify/ws-notify.gateway";
 
 @Module({
   controllers: [],
@@ -46,7 +47,7 @@ import { GraphQLModule } from "@nestjs/graphql";
       provide: APP_INTERCEPTOR,
       scope: Scope.REQUEST,
       useClass: MorganInterceptor("combined"),
-    },
+    }, WsNotifyGateway
   ],
 })
 export class AppModule {}

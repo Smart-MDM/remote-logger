@@ -2,6 +2,8 @@ FROM node:19.1 AS base
 
 WORKDIR /app
 
+#RUN rm -rf node_modules package-lock.json
+
 COPY package.json ./
 
 RUN npm install

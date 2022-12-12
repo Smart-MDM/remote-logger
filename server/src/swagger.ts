@@ -1,6 +1,6 @@
 import { DocumentBuilder, SwaggerCustomOptions } from "@nestjs/swagger";
 
-export const swaggerPath = "api";
+export const swaggerPath = "docs";
 
 export const swaggerDocumentOptions = new DocumentBuilder()
   .setTitle("Remote-Logger")
